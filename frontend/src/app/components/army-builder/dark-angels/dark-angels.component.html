@@ -3,6 +3,23 @@
     <h2 class="text-2xl">dark-angels units</h2>
 
     <ul>
+    <h3 class="mb-2 mt-2 font-semibold uppercase">Characters</h3>
+      <li *ngFor="let unit of darkAngelsCharacters">{{ unit.name }}</li>
+
+    <h3 class="mb-2 mt-2 font-semibold uppercase">Battleline</h3>
+      <li *ngFor="let unit of darkAngelsBattleLine">{{ unit.name }}</li>
+
+    <h3 class="mb-2 mt-2 font-semibold uppercase">Dedicated Transports</h3>
+      <li *ngFor="let unit of darkAngelsDedicatedTransport">{{ unit.name }}</li>
+
+    <h3 class="mb-2 mt-2 font-semibold uppercase">Other Data Sheets</h3>
+      <li *ngFor="let unit of darkAngelsOtherDataSheets">{{ unit.name }}</li>
+
+    <h3 class="mb-2 mt-2 font-semibold uppercase">Allied Units</h3>
+      <li *ngFor="let unit of darkAngelsAlliedUnits">{{ unit.name }}</li>
+
+
+
       <li *ngFor="let unit of darkAngelsUnits" >{{ unit.name }}</li>
     </ul>
   </div>

@@ -1,4 +1,6 @@
 export interface DarkAngelUnit {
   id: number;
-  name: string
+  name: string;
+  keywords: string;
+  points: number;
 }
